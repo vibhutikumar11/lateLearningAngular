@@ -4,6 +4,8 @@
      {{ title }}
   </h1>
 
+  <app-todolist></app-todolist>
+
 
 <h4>
   {{Obj.name}}
@@ -17,6 +19,14 @@
 
 <p *ngIf="myName=='vibhuti'"  style="color:green;">True</p>
 
+
+
+
+<p *ngIf="myName=='vibhuti' then firstTemp else secondTemp"  style="color:green;"></p>
+
+
+<ng-template #firstTemp> this is my first template ! <span>(:</span></ng-template>
+<ng-template #secondTemp>this is my second template ! <span>(:</span></ng-template>
 
 
 <a routerLink="/product">Product</a>

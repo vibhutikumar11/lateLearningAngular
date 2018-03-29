@@ -1,0 +1,23 @@
+main {
+  width: 500px;
+  border:1px solid #d7d7d7;
+  margin:auto;
+  padding: 20px;
+}
+
+ul{
+  list-style-type:none;
+  margin:0;
+  padding:0;
+    width: inherit;
+    width: 215px;
+    margin: auto;
+}
+
+
+li{
+  background-color: #ccc;
+  width: inherit;
+  text-align: center;
+  padding: 5px 0px;
+}
