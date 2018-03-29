@@ -4,6 +4,21 @@
      {{ title }}
   </h1>
 
+
+<h4>
+  {{Obj.name}}
+</h4>
+
+<ul>
+  <li *ngFor="let i of arr">{{i}}</li>
+</ul>
+
+<p *ngIf="!isTrue" style="color:red;">OTP has sent to you.</p>
+
+<p *ngIf="myName=='vibhuti'"  style="color:green;">True</p>
+
+
+
 <a routerLink="/product">Product</a>
 <a routerLink="/member">Member</a>
 
