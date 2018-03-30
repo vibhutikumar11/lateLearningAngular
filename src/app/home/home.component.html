@@ -1,0 +1,19 @@
+
+<p></p>
+<button type="button" name="button" routerLink="/product">+ Add Product</button>
+
+<table align="center" style="margin-top:20px; margin-bottom:20px;">
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Color</th>
+    <th></th>
+  </tr>
+
+  <tr *ngFor="let product of products">
+    <td>{{product.id}}</td>
+    <td>{{product.name}}</td>
+    <td>{{product.color}}</td>
+    <td (click) = "deleteProduct(product.id)"> <a style="text-decoration:underline; color:blue; cursor:pointer;">Delete</a></td>
+  </tr>
+</table>
